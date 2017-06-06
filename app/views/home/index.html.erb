@@ -14,14 +14,13 @@
                       class: 'btn btn-danger',
                       data: { confirm: 'Really Delete?'},
                       method: :delete
-         %></div>
-      </li>
+           %></div>
+         </li>
     <% end %>
-  </ul>
+</ul>
 
 <hr />
-  <h4> total: <%= number_to_currency current_user.cart.cart_total %> </h4>
-
+<h4> total: <%= number_to_currency current_user.cart.cart_total %> </h4>
 
 <% else %>
 <h3>No Products, Go Choose One!</h3>

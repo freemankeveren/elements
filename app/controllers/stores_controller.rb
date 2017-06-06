@@ -1,4 +1,5 @@
 class StoresController < ApplicationController
+  #ended up not using
   def index
   end
 

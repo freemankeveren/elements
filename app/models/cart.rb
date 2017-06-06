@@ -4,9 +4,9 @@ class Cart < ApplicationRecord
 
   serialize :products, Array
 
-def cart_total
-  total = 0
-  products.each do |product|
+  def cart_total
+    total = 0
+    products.each do |product|
     total += product.price
   end
   total
