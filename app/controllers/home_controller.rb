@@ -7,7 +7,6 @@ class HomeController < ApplicationController
     cart.save
     redirect_to root_path
   end
-
   # , Materialize.toast('I am a toast!', 4000)
 # <a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
   # if @car.save

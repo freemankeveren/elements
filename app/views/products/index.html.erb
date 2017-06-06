@@ -6,9 +6,9 @@
   <% @products.each do |product| %>
     <div class="col s4">
       <p><%= product.name %> - $<%= product.price %></p>
-      <%= link_to 'Add to Cart', add_to_cart_path(product), method: :post, class: 'btn' %>
-
+      <%= link_to 'Add to Cart', add_to_cart_path(product), method: :post, class: 'btn', confirm: 'Added to cart!' %>
       </div>
 
   <% end %>
 </div>
+<a class="btn" onclick="Materialize.toast('I am a toast', 4000)">Toast!</a>
