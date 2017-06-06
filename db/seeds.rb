@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 category = ['land', 'snow', 'water']
 
-20.times {
+18.times {
   Product.create(
     name: Faker::Commerce.product_name,
     price: Faker::Commerce.price.to_f,
