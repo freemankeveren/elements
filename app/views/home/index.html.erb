@@ -1,7 +1,10 @@
-<h1>Elements <%= current_user.email %> </h1>
+<h2><%= current_user.email %> </h2>
+<hr />
+
 <% if @products.any? %>
 
 <ul class='list-group'>
+  <thead><h4>Items:</h4></thead>
     <% @products.each do |product| %>
       <li class='list-group-item'>
          <div class="row">
@@ -16,8 +19,8 @@
     <% end %>
   </ul>
 
-
-  <h3> total: <%= number_to_currency current_user.cart.cart_total %> </h3>
+<hr />
+  <h4> total: <%= number_to_currency current_user.cart.cart_total %> </h4>
 
 
 <% else %>
