@@ -6,7 +6,7 @@
   <% @products.each do |product| %>
     <div class="col s4">
       <p><%= product.name %> - $<%= product.price %></p>
-      <%= link_to 'Add to Cart', add_to_cart_path(product), method: :post %> 
+      <%= link_to 'Add to Cart', add_to_cart_path(product), method: :post, class: 'btn' %>
 
       </div>
 
