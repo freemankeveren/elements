@@ -4,13 +4,14 @@
 <ul class='list-group'>
     <% @products.each do |product| %>
       <li class='list-group-item'>
-         <%= product.name %>
-         <%= link_to 'Delete',
+         <div class="row">
+           <div class="col s3"><%= product.name %></div>
+           <div class="s3 offset-s6"><%= link_to 'Delete',
                       delete_from_cart_path(product),
                       class: 'btn btn-danger',
                       data: { confirm: 'Really Delete?'},
                       method: :delete
-         %>
+         %></div>
       </li>
     <% end %>
   </ul>
