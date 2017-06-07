@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
-  devise_for :users
+  devise_for :users, controllers: {
+    omniauth_callbacks: 'omniauth_callbacks'
+  }
+  root 'home#index'
+  
   resources :stores
   resources :products
   post '/addproduct/:id', to: 'home#add_to_cart', as: 'add_to_cart'
